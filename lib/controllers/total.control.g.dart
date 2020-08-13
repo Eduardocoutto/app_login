@@ -1,0 +1,69 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'total.control.dart';
+
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
+
+mixin _$TotalControl on _TotalControl, Store {
+  final _$valueAtom = Atom(name: '_TotalControl.value');
+
+  @override
+  double get value {
+    _$valueAtom.reportRead();
+    return super.value;
+  }
+
+  @override
+  set value(double value) {
+    _$valueAtom.reportWrite(value, super.value, () {
+      super.value = value;
+    });
+  }
+
+  final _$_TotalControlActionController =
+      ActionController(name: '_TotalControl');
+
+  @override
+  void add(double val) {
+    final _$actionInfo =
+        _$_TotalControlActionController.startAction(name: '_TotalControl.add');
+    try {
+      return super.add(val);
+    } finally {
+      _$_TotalControlActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void remove(double val) {
+    final _$actionInfo = _$_TotalControlActionController.startAction(
+        name: '_TotalControl.remove');
+    try {
+      return super.remove(val);
+    } finally {
+      _$_TotalControlActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void reset() {
+    final _$actionInfo = _$_TotalControlActionController.startAction(
+        name: '_TotalControl.reset');
+    try {
+      return super.reset();
+    } finally {
+      _$_TotalControlActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+value: ${value}
+    ''';
+  }
+}
