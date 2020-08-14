@@ -70,12 +70,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/user.png
-    - assets/logo.png
     - assets/reset-password-icon.png
     - assets/profile-picture.png
-    - assets/user-picture.png
-    - assets/app-logo.png
-    - assets/post-picture-001.png
     - assets/perfil.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
