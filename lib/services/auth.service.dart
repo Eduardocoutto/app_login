@@ -22,8 +22,24 @@ class AuthSevice {
         throw new Exception("Dados inválidos.");
       } else {
         throw Exception(
-          error['error_description'],
+          error['Message'],
         );
+      }
+    }
+  }
+
+  Future<bool> recuperarLogin(String email) async {
+    var loginRepository = LoginRepository();
+
+    var response = await loginRepository.recuperar(email);
+
+    if (response.statusCode == 200) {
+      return Future.value(true);
+    } else {
+      if (response.statusCode == 404) {
+        throw new Exception("Não encontrado registro com o email informado.");
+      } else {
+        throw new Exception("Não foi possível realizar a ação.");
       }
     }
   }

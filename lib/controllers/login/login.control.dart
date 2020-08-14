@@ -78,10 +78,8 @@ abstract class LoginPageControlBase with Store {
       }
     } on DioError catch (erro) {
       String msgErro = "";
-      if (erro.response != null &&
-          erro.response.data != null &&
-          erro.response.data['error_description'] != null) {
-        msgErro = erro.response.data['error_description'];
+      if (erro.response.statusCode != null && erro.response.statusCode == 401) {
+        msgErro = "Login incorreto";
       } else {
         msgErro = "Falha ao tentar realizar login";
       }
